@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Travel Agency</title>
+</head>
+<body>
+  <header class="header py-3 px-1">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Travel</span>
+        </a>
+          <label for="text" class="search">
+            <input type="text" name="text" id="text" placeholder="search here...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <div class="header-icons">
+            <i class="fa-solid fa-moon moon"></i>
+            <i class="fa-solid fa-user user"></i>
+            <i class="fa-solid fa-bars bars"></i>
+          </div>
+          <div class="box links">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Packages</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Review</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box form">
+            <form action="get">
+              <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+              <div class="remember-box">
+                <input type="checkbox" name="remember" id="remember" class="remember">
+                <label for="remember" class="rem-label">Remember Me</label>
+              </div>
+              <button>Login</button>
+          </form>
+          </div>
+      </div>
+  </header>
+  <section class="container-fluid cn1-container py-5 d-flex">
+    <div class="cn1 py-3 d-sm-flex align-items-center box">
+      <div class="box-img w-100" data-aos="fade-down" data-aos-duration="1500">
+        <img src="imgs/home-img.svg" alt="img1" class="img-fluid">
+      </div>
+      <div class="cn1-text w-100" data-aos="fade-up" data-aos-duration="1500">
+        <h1>Adventure Is Worthwhile</h1>
+        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officia beatae, est nisi recusandae suscipit ipsum quos amet. Non eum aperiam quaerat praesentium, magnam fuga aspernatur totam reiciendis nemo delectus eligendi doloribus, ad.</p>
+        <button>Explore Now</button>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid cn2-container pb-4">
+    <div class="cn2 py-2 p-4 py-4" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="row">
+        <div class="col-sm px-sm-0 mb-3 mb-sm-0">
+          <h5>Where To</h5>
+          <input type="text" name="places" id=" places" placeholder="search places" class="w-100 p-2">
+        </div>
+        <div class="col-sm mb-3 mb-sm-0">
+          <h5>Arrivals</h5>
+          <input type="date" name="date" id="date" class="w-100 p-2">
+        </div>
+        <div class="col-sm px-sm-0 mb-3 mb-sm-0">
+          <h5>Leaving</h5>
+          <input type="date" name="date" id="date" class="w-100 p-2">
+        </div>
+        <div class="col-sm d-flex align-items-center">
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="packages cn3-container container-fluid">
+    <div class="cn3 py-3">
+      <h1 class="py-3 my-0 text-center">Our <span>Packages</span></h1>
+      <div class="row d-flex gap-3 py-2">
+        <div class="col-md p-3" data-aos="fade-up" data-aos-duration="1500">
+          <img src="imgs/p-1.jpg" alt="mumbai-img">
+          <div class="city-name">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Mumbai</span>
+          </div>
+          <h3 class="my-3 fw-bold">290.99 <span>350.99</span></h3>
+          <p>Lorem, ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Verom Vitae</p>
+          <button>Book Now</button>
+        </div>
+        <div class="col-md p-3" data-aos="fade-up" data-aos-duration="1500">
+          <img src="imgs/p-2.jpg" alt="hawaii-img">
+          <div class="city-name">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Hawaii</span>
+          </div>
+          <h3 class="my-3 fw-bold">290.99 <span>350.99</span></h3>
+          <p>Lorem, ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Verom Vitae</p>
+          <button>Book Now</button>
+        </div>
+        <div class="col-md p-3" data-aos="fade-up" data-aos-duration="1500">
+          <img src="imgs/p-3.jpg" alt="sydney-img">
+          <div class="city-name">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Sydney</span>
+          </div>
+          <h3 class="my-3 fw-bold">290.99 <span>350.99</span></h3>
+          <p>Lorem, ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Verom Vitae</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div class="row d-flex gap-3 py-3">
+        <div class="col-md p-3" data-aos="fade-up" data-aos-duration="1500">
+          <img src="imgs/p-4.jpg" alt="paris-img">
+          <div class="city-name">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Paris</span>
+          </div>
+          <h3 class="my-3 fw-bold">290.99 <span>350.99</span></h3>
+          <p>Lorem, ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Verom Vitae</p>
+          <button>Book Now</button>
+        </div>
+        <div class="col-md p-3" data-aos="fade-up" data-aos-duration="1500">
+          <img src="imgs/p-5.jpg" alt="tokyo-img">
+          <div class="city-name">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Tokyo</span>
+          </div>
+          <h3 class="my-3 fw-bold">290.99 <span>350.99</span></h3>
+          <p>Lorem, ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Verom Vitae</p>
+          <button>Book Now</button>
+        </div>
+        <div class="col-md p-3" data-aos="fade-up" data-aos-duration="1500">
+          <img src="imgs/p-6.jpg" alt="egypt-img">
+          <div class="city-name">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Egypt</span>
+          </div>
+          <h3 class="my-3 fw-bold">290.99 <span>350.99</span></h3>
+          <p>Lorem, ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Verom Vitae</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services cn4-container container-fluid">
+    <div class="cn4 py-3">
+      <h1 class="py-3 my-0 text-center">Our <span>Services</span></h1>
+      <div class="row d-flex gap-3 py-2">
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="icon-num d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-hotel"></i>
+            <h1>01</h1>
+          </div>
+          <h4 class="my-2">Affordable Hotels</h4>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Officia, Rem</p>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="icon-num d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-plane"></i>
+            <h1>02</h1>
+          </div>
+          <h4 class="my-2">Fastest Travel</h4>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Officia, Rem</p>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="icon-num d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-utensils"></i>
+            <h1>03</h1>
+          </div>
+          <h4 class="my-2">Food And Drinks</h4>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Officia, Rem</p>
+        </div>
+      </div>
+      <div class="row d-flex gap-3 py-2">
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="icon-num d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-globe"></i>
+            <h1>04</h1>
+          </div>
+          <h4 class="my-2">Around The World</h4>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Officia, Rem</p>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="icon-num d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-person-hiking"></i>
+            <h1>05</h1>
+          </div>
+          <h4 class="my-2">New Adventures</h4>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Officia, Rem</p>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="icon-num d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h1>06</h1>
+          </div>
+          <h4 class="my-2">Safety Guides</h4>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Officia, Rem</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pricing cn5-container container-fluid">
+    <div class="cn5 py-3">
+      <h1 class="py-3 my-0 text-center">Our <span>Pricing</span></h1>
+      <div class="row d-flex gap-3 py-2 text-center price-row">
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <h4 class="mb-4">Basic Plan</h4>
+          <span>$ <h1>30</h1> /Mo</span>
+          <p class="mt-3">10 Days</p>
+          <p>Food And Drinks</p>
+          <p>Safty Guide</p>
+          <p>Insurance</p>
+          <p class="mb-4">Luxury Hotel</p>
+          <button>Choose Plan</button>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <h4 class="mb-4">Standard Plan</h4>
+          <span>$ <h1>50</h1> /Mo</span>
+          <p class="mt-3">10 Days</p>
+          <p>Food And Drinks</p>
+          <p>Safty Guide</p>
+          <p>Insurance</p>
+          <p class="mb-4">Luxury Hotel</p>
+          <button>Choose Plan</button>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <h4 class="mb-4">Premium Plan</h4>
+          <span>$ <h1>90</h1> /Mo</span>
+          <p class="mt-3">10 Days</p>
+          <p>Food And Drinks</p>
+          <p>Safty Guide</p>
+          <p>Insurance</p>
+          <p class="mb-4">Luxury Hotel</p>
+          <button>Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="client cn6-container container-fluid">
+    <div class="cn6 py-3">
+      <h1 class="py-3 my-0 text-center">Client's <span>Review</span></h1>
+      <!-- Slider main container -->
+        <div class="swiper" data-aos="fade-up" data-aos-duration="1500">
+  <!-- Additional required wrapper -->
+          <div class="swiper-wrapper text-center">
+    <!-- Slides -->
+          <div class="swiper-slide p-5">
+            <img src="imgs/pic-1.png" alt="client-1" class="img-fluid">
+            <h3 class="my-3">John Doe</h3>
+            <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Pariatur Sunt Eligendi Est, Dicta Maiores Amet Nigil Perferendis, Incidunt Maxime Aspernatur Exercitationem Laboriosam Odio Dolores Magnam Ratione Atque, Quase Odit. Hic!</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="swiper-slide p-5">
+            <img src="imgs/pic-2.png" alt="client-2" class="img-fluid">
+            <h3 class="my-3">Joana Doe</h3>
+            <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Pariatur Sunt Eligendi Est, Dicta Maiores Amet Nigil Perferendis, Incidunt Maxime Aspernatur Exercitationem Laboriosam Odio Dolores Magnam Ratione Atque, Quase Odit. Hic!</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="swiper-slide p-5">
+            <img src="imgs/pic-3.png" alt="client-3" class="img-fluid">
+            <h3 class="my-3">John Doe</h3>
+            <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Pariatur Sunt Eligendi Est, Dicta Maiores Amet Nigil Perferendis, Incidunt Maxime Aspernatur Exercitationem Laboriosam Odio Dolores Magnam Ratione Atque, Quase Odit. Hic!</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="swiper-slide p-5">
+            <img src="imgs/pic-4.png" alt="client-4" class="img-fluid">
+            <h3 class="my-3">Joana Doe</h3>
+            <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Pariatur Sunt Eligendi Est, Dicta Maiores Amet Nigil Perferendis, Incidunt Maxime Aspernatur Exercitationem Laboriosam Odio Dolores Magnam Ratione Atque, Quase Odit. Hic!</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+  <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+</div>
+    </div>
+  </section>
+  <section class="contact cn6-container container-fluid">
+    <div class="cn6 py-3">
+      <h1 class="py-3 my-0 text-center"><span>Contact</span> Us</h1>
+      <div class="row d-flex gap-3 pt-3 px-3" data-aos="fade-up" data-aos-duration="1500">
+        <input type="text" name="name" id="name" class="col-md" placeholder="name">
+        <input type="email" name="email" id="email" class="col-md" placeholder="Email">
+      </div>
+      <div class="row d-flex gap-3 pt-3 px-3" data-aos="fade-up" data-aos-duration="1500">
+        <input type="number" name="number" id="number" class="col-md" placeholder="number">
+        <input type="text" name="text" id="text" class="col-md" placeholder="subject">
+      </div>
+      <div class="row px-3" data-aos="fade-up" data-aos-duration="1500">
+        <textarea name="message" id="message" cols="30" rows="10" class="mt-3 w-100 mb-4" placeholder="your message"></textarea>
+      </div>
+      <button class="d-block mx-auto px-5 py-2" data-aos="fade-up" data-aos-duration="1500">Send Message</button>
+    </div>
+  </section>
+  <section class="blog cn7-container container-fluid">
+    <div class="cn7 py-3">
+      <h1 class="py-3 my-0 text-center">Our <span>Blogs</span></h1>
+      <div class="row d-flex gap-3 py-2 price-row">
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="bg-container bg-container-1">
+            <img src="imgs/blog-1.svg" alt="blog-1">
+          </div>
+          <h5 class="my-3">Explore The World Now,<br>Adventure Awaits</h5>
+          <button>Read More</button>
+          <hr>
+          <div class="date-admin d-flex justify-content-between">
+            <div class="date">
+              <i class="fa-solid fa-calendar me-2"></i><a href="#">1st Jan, 2021</a>
+            </div>
+            <div class="admin">
+              <i class="fa-solid fa-user"></i><a href="#" class="ms-2">By Admin</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="bg-container bg-container-2">
+            <img src="imgs/blog-2.svg" alt="blog-2">
+          </div>
+          <h5 class="my-3">Explore The World Now,<br>Adventure Awaits</h5>
+          <button>Read More</button>
+          <hr>
+          <div class="date-admin d-flex justify-content-between">
+            <div class="date">
+              <i class="fa-solid fa-calendar me-2"></i><a href="#">1st Jan, 2021</a>
+            </div>
+            <div class="admin">
+              <i class="fa-solid fa-user"></i><a href="#" class="ms-2">By Admin</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md p-3" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="bg-container bg-container-3">
+            <img src="imgs/blog-3.svg" alt="blog-3">
+          </div>
+          <h5 class="my-3">Explore The World Now,<br>Adventure Awaits</h5>
+          <button>Read More</button>
+          <hr>
+          <div class="date-admin d-flex justify-content-between">
+            <div class="date">
+              <i class="fa-solid fa-calendar me-2"></i><a href="#">1st Jan, 2021</a>
+            </div>
+            <div class="admin">
+              <i class="fa-solid fa-user"></i><a href="#" class="ms-2">By Admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-md pt-4">
+        <h3>Our Branches</h3>
+        <ul class="px-0">
+          <li class="my-3">
+            <i class="fa-solid fa-location-dot me-2"></i><a href="#">India</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-location-dot me-2"></i><a href="#">Russia</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-location-dot me-2"></i><a href="#">Japan</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-location-dot me-2"></i><a href="#">France</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-location-dot me-2"></i><a href="#">Canada</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md pt-4">
+        <h3>Quick Links</h3>
+        <ul class="px-0">
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Home</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Packages</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Services</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Pricing</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Review</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Contact</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-greater-than me-2"></i><a href="#">Blogs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md pt-4">
+        <h3>Contact Info</h3>
+        <ul class="px-0">
+          <li class="my-3">
+            <i class="fa-solid fa-phone-flip me-2"></i><a href="#">+123-456-789</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-phone-flip me-2"></i><a href="#">+111-222-3333</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-envelope me-2"></i><a href="#">Shaikhanas@Gmail.Com</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-solid fa-location-dot me-2"></i><a href="#">Mumbai, Indai - 400104</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md pt-4">
+        <h3>Follow Us</h3>
+        <ul class="px-0">
+          <li class="my-3">
+            <i class="fa-brands fa-facebook-f me-2"></i><a href="#">Facebook</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-brands fa-twitter me-2"></i><a href="#">Twitter</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-brands fa-instagram me-2"></i><a href="#">Instagram</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-brands fa-linkedin me-2"></i><a href="#">Linkedin</a>
+          </li>
+          <li class="my-3">
+            <i class="fa-brands fa-pinterest me-2"></i><a href="#">Pinterest</a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+    <p class="text-center my-0 pb-3">Created By <a href="#">Fenmow</a> | All Rights Reserved</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/3b8b94a692.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
